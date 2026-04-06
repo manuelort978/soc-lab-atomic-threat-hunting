@@ -1,0 +1,23 @@
+# T1082 – System Information Discovery
+
+## Description
+This technique simulates system recognition by retrieving detailed information about the host.
+
+## Command Used
+Invoke-AtomicTest T1082
+
+## Logs Observed
+- Process creation events (Event ID 4688 OR 4799)
+- Execution of commands like systeminfo
+
+## Analysis
+System information gathering helps attackers understand the environment and identify potential vulnerabilities or targets.
+
+## Detection Opportunities
+- Monitor execution of systeminfo and related commands
+- Detect unusual system queries
+- Correlate with reconnaissance patterns
+
+## MITRE ATT&CK Mapping
+- Tactic: Discovery
+- Technique: T1082
