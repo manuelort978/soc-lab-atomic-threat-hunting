@@ -1,0 +1,23 @@
+# T1057 – Process Discovery
+
+## Description
+This technique simulates enumeration of running processes on a system, which attackers use to understand the environment.
+
+## Command Used
+Invoke-AtomicTest T1057
+
+## Logs Observed
+- Process execution logs (Event ID 4688 OR 600)
+- Commands such as tasklist
+
+## Analysis
+Process enumeration is often an early-stage reconnaissance activity. It may indicate that an attacker is preparing for further actions.
+
+## Detection Opportunities
+- Monitor execution of tasklist or similar commands
+- Identify unusual process enumeration patterns
+- Correlate with other suspicious activity
+
+## MITRE ATT&CK Mapping
+- Tactic: Discovery
+- Technique: T1057
