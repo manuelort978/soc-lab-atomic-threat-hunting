@@ -1,0 +1,23 @@
+# T1003 – Credential Dumping
+
+## Description
+This technique simulates credential access behavior using Atomic Red Team. It represents attempts to extract sensitive credential information from the system.
+
+## Command Used
+Invoke-AtomicTest T1003
+
+## Logs Observed
+- Process creation events (Event ID 4688 OR 600)
+- PowerShell or command-line activity
+
+## Analysis
+The activity may resemble credential dumping attempts, which are commonly used by attackers after initial access to escalate privileges or move laterally.
+
+## Detection Opportunities
+- Monitor suspicious process execution
+- Detect abnormal use of administrative tools
+- Analyze command-line arguments
+
+## MITRE ATT&CK Mapping
+- Tactic: Credential Access
+- Technique: T1003
