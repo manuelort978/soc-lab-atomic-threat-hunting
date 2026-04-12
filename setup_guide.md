@@ -155,7 +155,7 @@ powershell OR cmd.exe OR tasklist OR security
 
 ---
 
-## ✅ Validation Checklist
+## Validation Checklist
 
 * [ ] Agent connected
 * [ ] Atomic installed
